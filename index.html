@@ -7,6 +7,7 @@
     <meta property="og:title" content="マツコの知らない世界 見逃し配信延長のお知らせ">
     <meta property="og:description" content="防災無線チャイム特集回の見逃し配信期間延長が決定しました。">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/847054/0c5a623925cc9f9b768e75bf59397081_e6969b21ac0bd23c45f236928b8fbe02.png">
     
     <title>マツコの知らない世界 見逃し配信延長のお知らせ | 特設ページ</title>
     
@@ -84,20 +85,19 @@
         <!-- メインカード -->
         <div class="content-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
             
-            <!-- 右上のバッジ -->
-            <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-6 py-2 rounded-bl-2xl shadow-sm z-20">
-                期間限定
-            </div>
-
             <!-- タイトルエリア -->
-            <div class="relative z-10 mb-10">
-                <div class="inline-block bg-brand-orange/10 text-brand-orange px-4 py-1 rounded-full font-bold text-sm mb-4">
-                    <i class="fa-solid fa-bullhorn mr-1"></i> お知らせ
+            <div class="relative z-10 mb-8 mt-4">
+                <!-- ロゴ画像 -->
+                <div class="mb-4 flex justify-center">
+                    <img src="https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/847054/0c5a623925cc9f9b768e75bf59397081_e6969b21ac0bd23c45f236928b8fbe02.png" 
+                         alt="ロゴ" 
+                         class="w-64 md:w-96 h-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300">
                 </div>
-                <h1 class="font-maru font-black text-2xl md:text-4xl text-slate-800 leading-tight tracking-tight mb-4">
-                    マツコの知らない世界<br class="md:hidden">見逃し配信延長のお知らせ
+                
+                <h1 class="font-maru font-black text-xl md:text-3xl text-slate-800 leading-tight tracking-tight mb-2">
+                    見逃し配信延長のお知らせ
                 </h1>
-                <div class="h-1 w-24 bg-gradient-to-r from-transparent via-brand-orange to-transparent mx-auto mt-6 opacity-50"></div>
+                <div class="h-1 w-24 bg-gradient-to-r from-transparent via-brand-orange to-transparent mx-auto mt-4 opacity-50"></div>
             </div>
 
             <!-- 本文エリア -->
@@ -105,10 +105,12 @@
                 <h3 class="font-bold text-center text-xl text-slate-800 mb-4">
                     配信延長が決定しました！
                 </h3>
+                
                 <p class="text-slate-600 text-sm md:text-base leading-relaxed text-center">
                     先日放送された「マツコの知らない世界」<br>
                     <span class="font-bold text-brand-orange">防災無線チャイム特集回</span>の<br class="md:hidden">
                     見逃し配信期間の延長が決定いたしました！<br><br>
+                    朝の青空に響くあの音色、<br>
                     夕暮れ時に響くあの音色、<br>
                     まだご覧になっていない方も、もう一度見たい方も、<br>
                     ぜひこの機会にお楽しみください。
@@ -126,6 +128,8 @@
                         <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
                         <i class="fa-solid fa-play mr-2"></i> TVerで今すぐ視聴
                     </a>
+                    <!-- ここに注釈を追加しました -->
+                    <p class="text-xs text-red-500 font-bold mt-1">※12月25日までの限定配信です</p>
                 </div>
 
                 <!-- 特設サイトリンク -->
@@ -165,7 +169,7 @@
             if (navigator.share) {
                 navigator.share({
                     title: 'マツコの知らない世界 見逃し配信延長のお知らせ',
-                    text: '防災無線チャイム特集回の見逃し配信延長が決定しました！',
+                    text: '防災無線チャイム特集回の見逃し配信延長が決定しました！12月25日まで！',
                     url: window.location.href,
                 })
                 .catch((error) => console.log('Error sharing', error));

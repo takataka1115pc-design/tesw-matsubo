@@ -101,13 +101,15 @@
             </div>
 
             <!-- 本文エリア -->
-            <div class="text-left bg-slate-50/80 rounded-xl p-6 mb-8 border border-slate-100 shadow-sm">
+            <!-- p-6からp-4に変更し、スマホでの横幅を確保 -->
+            <div class="text-left bg-slate-50/80 rounded-xl p-4 md:p-6 mb-8 border border-slate-100 shadow-sm">
                 <h3 class="font-bold text-center text-xl text-slate-800 mb-4">
                     配信延長が決定しました！
                 </h3>
                 
                 <p class="text-slate-600 text-sm md:text-base leading-relaxed text-center">
-                    先日放送された「マツコの知らない世界」<br>
+                    <!-- whitespace-nowrapで改行禁止、text-xsで少し文字を小さくして収まりを良くしています -->
+                    <span class="whitespace-nowrap text-xs sm:text-sm">先日放送された「マツコの知らない世界」</span><br>
                     <span class="font-bold text-brand-orange">防災無線チャイム特集回</span>の<br class="md:hidden">
                     見逃し配信期間の延長が決定いたしました！<br><br>
                     朝の青空に響くあの音色、<br>
@@ -122,13 +124,12 @@
                 
                 <!-- TVer視聴ボタン -->
                 <div class="space-y-2">
-                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider"></p>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Watch Now</p>
                     <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tver.jp/series/srlblerhue&ved=2ahUKEwjnouTx1aKRAxVCaPUHHQyqANUQFnoECCsQAQ&usg=AOvVaw22DAyXyYpyWI8Q_PyXmqTp" target="_blank" class="group relative flex items-center justify-center w-full bg-tver-blue text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all overflow-hidden">
                         <!-- キラッと光るエフェクト -->
                         <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></div>
                         <i class="fa-solid fa-play mr-2"></i> TVerで今すぐ視聴
                     </a>
-                    <!-- ここに注釈を追加しました -->
                     <p class="text-xs text-red-500 font-bold mt-1">※12月25日までの限定配信です</p>
                 </div>
 
